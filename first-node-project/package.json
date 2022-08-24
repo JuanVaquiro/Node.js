@@ -1,0 +1,22 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "example first module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "first",
+    "project.",
+    "node.js"
+  ],
+  "author": "juanVaquiro",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
