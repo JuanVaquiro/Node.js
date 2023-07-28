@@ -7,4 +7,4 @@ customEmitter.on('response', (data) => {
     console.log(data);
 })
 
-customEmitter.emit('response', 'messages')
+customEmitter.emit('response', 'messages') 
