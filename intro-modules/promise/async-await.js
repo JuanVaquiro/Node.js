@@ -1,4 +1,4 @@
-const { readFile } = require("fs");
+import { readFile } from "fs";
 
 const getText = (pathFile) => {
   return new Promise((resolve, reject) => {
@@ -11,9 +11,15 @@ const getText = (pathFile) => {
   });
 };
 
+// secuencial
 const read = async () => {
-  const res = await getText("./data/first.txt", "utf-8");
-  console.log(res);
+  console.log('Leyendo primer archivo...')
+  const res = await getText("./data/strean.txt");
+  console.log('uno:', res)
+  console.log('----> procesar cosas <----')
+  console.log('Leyendo segundo archivo...')
+  const res2 = await getText("./data/second.txt");
+  console.log('dos:', res2)
 };
 
 read();
